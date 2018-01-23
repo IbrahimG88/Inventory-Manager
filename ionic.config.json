@@ -1,0 +1,8 @@
+{
+  "name": "Inventory-Manager",
+  "app_id": "a991d586",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
