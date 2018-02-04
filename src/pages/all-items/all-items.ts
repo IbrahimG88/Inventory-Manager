@@ -15,11 +15,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AllItemsPage {
 
+  parameter1;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.parameter1 = this.navParams.get('param1');
+    console.log("from all list page" + this.parameter1.title );
+
   }
+
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AllItemsPage');
+
   }
 
 }
