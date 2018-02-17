@@ -3,17 +3,20 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import {AddItemPage} from "../pages/add-item/add-item";
 import {AllItemsPage} from "../pages/all-items/all-items";
 import {ReorderPage} from "../pages/reorder/reorder";
+import {NewStocksPage} from "../pages/new-stocks/new-stocks";
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+
 
   rootPage: any = HomePage;
 
@@ -29,7 +32,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'All Items', component: AllItemsPage },
       { title: 'Add Item', component: AddItemPage },
-      { title: 'Reorder', component: ReorderPage }
+      { title: 'Reorder', component: ReorderPage },
+      { title: 'New Stocks', component: NewStocksPage }
     ];
 
   }
@@ -49,4 +53,5 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
 }
