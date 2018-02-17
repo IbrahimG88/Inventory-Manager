@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { AddItemPage } from './add-item';
+import { NgForm } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { AddItemPage } from './add-item';
   ],
   imports: [
     IonicPageModule.forChild(AddItemPage),
+    NgForm
   ],
 })
 export class AddItemPageModule {}
